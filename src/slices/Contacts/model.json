@@ -1,0 +1,78 @@
+{
+  "id": "contacts",
+  "type": "SharedSlice",
+  "name": "Contacts",
+  "description": "Contacts",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "heading",
+            "placeholder": ""
+          }
+        },
+        "number": {
+          "type": "Text",
+          "config": {
+            "label": "Number",
+            "placeholder": ""
+          }
+        },
+        "github_label": {
+          "type": "Text",
+          "config": {
+            "label": "Github_Label",
+            "placeholder": ""
+          }
+        },
+        "github_link": {
+          "type": "Link",
+          "config": {
+            "label": "Github_Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "twitter_label": {
+          "type": "Text",
+          "config": {
+            "label": "Twitter Label",
+            "placeholder": ""
+          }
+        },
+        "twitter_link": {
+          "type": "Link",
+          "config": {
+            "label": "Twitter Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "linkedin_label": {
+          "type": "Text",
+          "config": {
+            "label": "Linkedin Label",
+            "placeholder": ""
+          }
+        },
+        "linkedin_link": {
+          "type": "Link",
+          "config": {
+            "label": "Linkedin Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

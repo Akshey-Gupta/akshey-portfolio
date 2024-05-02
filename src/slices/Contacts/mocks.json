@@ -1,0 +1,55 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "offer",
+				"type": "Text"
+			},
+			"github_label": {
+				"__TYPE__": "FieldContent",
+				"value": "mighty",
+				"type": "Text"
+			},
+			"github_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"twitter_label": {
+				"__TYPE__": "FieldContent",
+				"value": "appearance",
+				"type": "Text"
+			},
+			"twitter_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"linkedin_label": {
+				"__TYPE__": "FieldContent",
+				"value": "chart",
+				"type": "Text"
+			},
+			"linkedin_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"number": {
+				"__TYPE__": "FieldContent",
+				"value": "interior",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
