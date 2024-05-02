@@ -1,5 +1,5 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from 'react'
+import clsx from 'clsx'
 
 type BoundedProps = {
     as?: React.ElementType,
@@ -15,9 +15,9 @@ const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(({
                 {...restProps}>
                 <div className='mx-auto w-full max-w-7x1'>{children}</div>
             </Comp>
-        );
-    });
+        )
+    })
 
 Bounded.displayName = 'Bounded';
 
-export default Bounded;
+export default Bounded
