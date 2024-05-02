@@ -17,5 +17,6 @@ const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(({
             </Comp>
         )
     })
+Bounded.displayName = 'Bounded';
 
 export default Bounded
