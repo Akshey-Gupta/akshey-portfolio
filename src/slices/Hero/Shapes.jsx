@@ -33,7 +33,6 @@ export default function Shapes() {
   );
 }
 
-
 function Geometries() {
   const geometries = [
     {
@@ -60,6 +59,16 @@ function Geometries() {
       position: [1, 1, -5], // Bottom
       r: 0.7,
       geometry: new THREE.OctahedronGeometry(1.5), // Diamond
+    },
+    {
+      position: [-3, -2, 4], // New Shape 1
+      r: 0.45,
+      geometry: new THREE.ConeGeometry(1.5, 3, 32), // Cone
+    },
+    {
+      position: [4, 3, -3], // New Shape 2
+      r: 0.5,
+      geometry: new THREE.BoxGeometry(2, 2, 2)
     },
   ];
 
@@ -99,7 +108,6 @@ function Geometries() {
     />
   ));
 }
-
 
 function Geometry({ r, position, geometry, soundEffects, materials }) {
   const meshRef = useRef();
