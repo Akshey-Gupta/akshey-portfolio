@@ -17,6 +17,20 @@ export default function Shapes() {
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
       >
         <Suspense fallback={null}>
+          <ambientLight intensity={0.5} />
+          <directionalLight
+            castShadow
+            position={[10, 10, 5]}
+            intensity={1}
+            shadow-mapSize-width={2048} // Increase shadow map resolution
+            shadow-mapSize-height={2048} // Increase shadow map resolution
+            shadow-camera-near={0.5}
+            shadow-camera-far={50}
+            shadow-camera-left={-20}
+            shadow-camera-right={20}
+            shadow-camera-top={20}
+            shadow-camera-bottom={-20}
+          />
           <Geometries />
           <ContactShadows
             position={[0, -3.5, 0]}
@@ -68,7 +82,7 @@ function Geometries() {
     {
       position: [4, 3, -3], // New Shape 2
       r: 0.5,
-      geometry: new THREE.BoxGeometry(2, 2, 2)
+      geometry: new THREE.BoxGeometry(2, 2, 2), // Box
     },
   ];
 
@@ -169,6 +183,8 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
           onPointerOut={handlePointerOut}
           visible={visible}
           material={startingMaterial}
+          castShadow
+          receiveShadow
         ></mesh>
       </Float>
     </group>
